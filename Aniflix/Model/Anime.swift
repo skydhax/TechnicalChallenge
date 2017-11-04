@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Anime:Decodable {
     let id:Int
     let title_romaji:String
@@ -31,6 +32,7 @@ class Anime:Decodable {
     
     // Anime model only values
     let total_episodes:Int
+    let characters:[Character]?
     let airing_status:String?
     let hashtag:String?
 }

@@ -12,4 +12,5 @@ class Urls {
     private static let base = "https://anilist.co/api/"
     static let authAccessToken = base + "auth/access_token"
     static let browseAnime = base + "browse/anime/"
+    static let getAnimeDetails = base + "anime/" //anime/{id}/page
 }

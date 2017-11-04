@@ -29,6 +29,9 @@ class HomeController:UITableViewController {
     
     private func setupNavbar() {
         title = "Aniflix"
+        if #available(iOS 11, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        }
     }
     
     private func fetchData() {
@@ -122,7 +125,9 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selecting: \(collectionView.tag) - \(indexPath.item)")
+        let vc = DetailController(style: .plain)
+        vc.animeId = self.animes[collectionView.tag][indexPath.item].id
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -70,4 +70,33 @@ class ApiService: NSObject {
         }).resume()
     }
     
+    //{id}/page
+    func callWSGetAnimeDetails( _ accessToken:String, _ id:Int ,_ completion: @escaping (Bool,Anime?) -> () ) {
+        let url = URL(string: Urls.getAnimeDetails + "\(id)/page")!
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let session = URLSession(configuration: sessionConfig, delegate: self as? URLSessionDelegate, delegateQueue: nil)
+        session.dataTask(with: request, completionHandler: {(data, response, error) in
+            guard error == nil else {
+                completion(false,nil)
+                return
+            }
+            if let returnData = String(data: data!, encoding: .utf8) {
+                print(returnData)
+            }
+            if let unwrappedData = data {
+                do {
+                    let anime = try JSONDecoder().decode(Anime.self , from: unwrappedData)
+                    completion(true,anime)
+                } catch let err {
+                    print(err.localizedDescription)
+                }
+            }
+        }).resume()
+    }
+    
 }
