@@ -11,6 +11,10 @@
 		33AF30AC1FAE2AA300EF2235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */; };
 		33AF30AF1FAE2AA300EF2235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */; };
 		33AF30BB1FAE2DB200EF2235 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30BA1FAE2DB200EF2235 /* HomeController.swift */; };
+		33AF30BF1FAE32D700EF2235 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30BE1FAE32D700EF2235 /* ApiService.swift */; };
+		33AF30C11FAE32E500EF2235 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C01FAE32E500EF2235 /* Urls.swift */; };
+		33AF30C31FAE331500EF2235 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C21FAE331500EF2235 /* Anime.swift */; };
+		33AF30C51FAE334700EF2235 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C41FAE334700EF2235 /* Extensions.swift */; };
 		3BE0E6A07EC8C5B15F508185 /* Pods_Aniflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,10 @@
 		33AF30B01FAE2AA300EF2235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33AF30BA1FAE2DB200EF2235 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		33AF30BD1FAE2F0C00EF2235 /* Aniflix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aniflix-Bridging-Header.h"; sourceTree = "<group>"; };
+		33AF30BE1FAE32D700EF2235 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		33AF30C01FAE32E500EF2235 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		33AF30C21FAE331500EF2235 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		33AF30C41FAE334700EF2235 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aniflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6C295C4FF0379E92166002 /* Pods-Aniflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.debug.xcconfig"; sourceTree = "<group>"; };
 		F29E1942BF08A28B4551890B /* Pods-Aniflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +93,9 @@
 				33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */,
 				33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */,
 				33AF30BD1FAE2F0C00EF2235 /* Aniflix-Bridging-Header.h */,
+				33AF30C01FAE32E500EF2235 /* Urls.swift */,
+				33AF30BE1FAE32D700EF2235 /* ApiService.swift */,
+				33AF30C41FAE334700EF2235 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		33AF30B71FAE2D9300EF2235 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33AF30C21FAE331500EF2235 /* Anime.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,7 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AF30BB1FAE2DB200EF2235 /* HomeController.swift in Sources */,
+				33AF30C51FAE334700EF2235 /* Extensions.swift in Sources */,
+				33AF30C31FAE331500EF2235 /* Anime.swift in Sources */,
 				33AF30A51FAE2AA300EF2235 /* AppDelegate.swift in Sources */,
+				33AF30BF1FAE32D700EF2235 /* ApiService.swift in Sources */,
+				33AF30C11FAE32E500EF2235 /* Urls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
