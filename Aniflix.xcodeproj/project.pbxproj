@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		33AF30A51FAE2AA300EF2235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */; };
-		33AF30A71FAE2AA300EF2235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30A61FAE2AA300EF2235 /* ViewController.swift */; };
-		33AF30AA1FAE2AA300EF2235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30A81FAE2AA300EF2235 /* Main.storyboard */; };
 		33AF30AC1FAE2AA300EF2235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */; };
 		33AF30AF1FAE2AA300EF2235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */; };
+		33AF30BB1FAE2DB200EF2235 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30BA1FAE2DB200EF2235 /* HomeController.swift */; };
+		3BE0E6A07EC8C5B15F508185 /* Pods_Aniflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33AF30A11FAE2AA300EF2235 /* Aniflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aniflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33AF30A61FAE2AA300EF2235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		33AF30A91FAE2AA300EF2235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33AF30AE1FAE2AA300EF2235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AF30B01FAE2AA300EF2235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AF30BA1FAE2DB200EF2235 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		33AF30BD1FAE2F0C00EF2235 /* Aniflix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aniflix-Bridging-Header.h"; sourceTree = "<group>"; };
+		C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aniflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6C295C4FF0379E92166002 /* Pods-Aniflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.debug.xcconfig"; sourceTree = "<group>"; };
+		F29E1942BF08A28B4551890B /* Pods-Aniflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +32,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE0E6A07EC8C5B15F508185 /* Pods_Aniflix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298593E658AEF0B707ABE667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA6C295C4FF0379E92166002 /* Pods-Aniflix.debug.xcconfig */,
+				F29E1942BF08A28B4551890B /* Pods-Aniflix.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		33AF30981FAE2AA300EF2235 = {
 			isa = PBXGroup;
 			children = (
 				33AF30A31FAE2AA300EF2235 /* Aniflix */,
 				33AF30A21FAE2AA300EF2235 /* Products */,
+				298593E658AEF0B707ABE667 /* Pods */,
+				F8CC6C5A13491755F8734959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,54 @@
 		33AF30A31FAE2AA300EF2235 /* Aniflix */ = {
 			isa = PBXGroup;
 			children = (
-				33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */,
-				33AF30A61FAE2AA300EF2235 /* ViewController.swift */,
-				33AF30A81FAE2AA300EF2235 /* Main.storyboard */,
-				33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */,
-				33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */,
 				33AF30B01FAE2AA300EF2235 /* Info.plist */,
+				33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */,
+				33AF30B71FAE2D9300EF2235 /* Model */,
+				33AF30B81FAE2D9700EF2235 /* View */,
+				33AF30B91FAE2D9B00EF2235 /* Controller */,
+				33AF30B61FAE2D8500EF2235 /* Utils */,
 			);
 			path = Aniflix;
+			sourceTree = "<group>";
+		};
+		33AF30B61FAE2D8500EF2235 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */,
+				33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */,
+				33AF30BD1FAE2F0C00EF2235 /* Aniflix-Bridging-Header.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		33AF30B71FAE2D9300EF2235 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33AF30B81FAE2D9700EF2235 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33AF30B91FAE2D9B00EF2235 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33AF30BA1FAE2DB200EF2235 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8CC6C5A13491755F8734959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33AF30B31FAE2AA300EF2235 /* Build configuration list for PBXNativeTarget "Aniflix" */;
 			buildPhases = (
+				40726B39ECE0A6A575145770 /* [CP] Check Pods Manifest.lock */,
 				33AF309D1FAE2AA300EF2235 /* Sources */,
 				33AF309E1FAE2AA300EF2235 /* Frameworks */,
 				33AF309F1FAE2AA300EF2235 /* Resources */,
+				5A32A5B09B3F7410EE865213 /* [CP] Embed Pods Frameworks */,
+				DDEF2AC93EA2C03F1E0C8E9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +183,71 @@
 			files = (
 				33AF30AF1FAE2AA300EF2235 /* LaunchScreen.storyboard in Resources */,
 				33AF30AC1FAE2AA300EF2235 /* Assets.xcassets in Resources */,
-				33AF30AA1FAE2AA300EF2235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40726B39ECE0A6A575145770 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aniflix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A32A5B09B3F7410EE865213 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEF2AC93EA2C03F1E0C8E9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33AF309D1FAE2AA300EF2235 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AF30A71FAE2AA300EF2235 /* ViewController.swift in Sources */,
+				33AF30BB1FAE2DB200EF2235 /* HomeController.swift in Sources */,
 				33AF30A51FAE2AA300EF2235 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +255,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		33AF30A81FAE2AA300EF2235 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33AF30A91FAE2AA300EF2235 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,14 +375,17 @@
 		};
 		33AF30B41FAE2AA300EF2235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6C295C4FF0379E92166002 /* Pods-Aniflix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM5DS4HC25;
 				INFOPLIST_FILE = Aniflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skylabs.Aniflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Utils/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +393,17 @@
 		};
 		33AF30B51FAE2AA300EF2235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29E1942BF08A28B4551890B /* Pods-Aniflix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SM5DS4HC25;
 				INFOPLIST_FILE = Aniflix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skylabs.Aniflix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Utils/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
