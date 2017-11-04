@@ -15,6 +15,7 @@ class HomeController:UITableViewController {
     var animes = [[Anime]]()
     
     let sliderCellId = "animeSliderCellId"
+    let itemCellId = "animeCellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,13 +68,13 @@ class HomeController:UITableViewController {
     }
     
     private func setupTableView() {
-        tableView.register(UITableViewCell.self , forCellReuseIdentifier: sliderCellId)
+        tableView.register(AnimeSliderCell.self , forCellReuseIdentifier: sliderCellId)
         tableView.backgroundColor = .white
         tableView.separatorStyle = .none
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return animes.count
     }
     
     
@@ -91,11 +92,37 @@ class HomeController:UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: sliderCellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: sliderCellId, for: indexPath) as! AnimeSliderCell
         return cell
     }
     
     
     
+}
+
+extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let cell = cell as? AnimeSliderCell else {return}
+        cell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self , forSection: indexPath.section)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return animes[collectionView.tag].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: itemCellId, for: indexPath) as! AnimeCell
+        cell.anime = self.animes[collectionView.tag][indexPath.item]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 400)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Selecting: \(collectionView.tag) - \(indexPath.item)")
+    }
 }
 

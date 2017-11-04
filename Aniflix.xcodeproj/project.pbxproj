@@ -15,6 +15,9 @@
 		33AF30C11FAE32E500EF2235 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C01FAE32E500EF2235 /* Urls.swift */; };
 		33AF30C31FAE331500EF2235 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C21FAE331500EF2235 /* Anime.swift */; };
 		33AF30C51FAE334700EF2235 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30C41FAE334700EF2235 /* Extensions.swift */; };
+		33CD142F1FAE4C06008A12B6 /* AnimeSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD142E1FAE4C06008A12B6 /* AnimeSliderCell.swift */; };
+		33CD14311FAE4C1B008A12B6 /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD14301FAE4C1B008A12B6 /* AnimeCell.swift */; };
+		33CD14341FAE4C51008A12B6 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD14331FAE4C51008A12B6 /* CustomImageView.swift */; };
 		3BE0E6A07EC8C5B15F508185 /* Pods_Aniflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		33AF30C01FAE32E500EF2235 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		33AF30C21FAE331500EF2235 /* Anime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 		33AF30C41FAE334700EF2235 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		33CD142E1FAE4C06008A12B6 /* AnimeSliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSliderCell.swift; sourceTree = "<group>"; };
+		33CD14301FAE4C1B008A12B6 /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		33CD14331FAE4C51008A12B6 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		C1EBFD4B836F221FE4EEB920 /* Pods_Aniflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aniflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6C295C4FF0379E92166002 /* Pods-Aniflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.debug.xcconfig"; sourceTree = "<group>"; };
 		F29E1942BF08A28B4551890B /* Pods-Aniflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aniflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 			children = (
 				33AF30B01FAE2AA300EF2235 /* Info.plist */,
 				33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */,
+				33CD14321FAE4C43008A12B6 /* Helpers */,
 				33AF30B71FAE2D9300EF2235 /* Model */,
 				33AF30B81FAE2D9700EF2235 /* View */,
 				33AF30B91FAE2D9B00EF2235 /* Controller */,
@@ -111,6 +118,8 @@
 		33AF30B81FAE2D9700EF2235 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33CD142E1FAE4C06008A12B6 /* AnimeSliderCell.swift */,
+				33CD14301FAE4C1B008A12B6 /* AnimeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +130,14 @@
 				33AF30BA1FAE2DB200EF2235 /* HomeController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		33CD14321FAE4C43008A12B6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				33CD14331FAE4C51008A12B6 /* CustomImageView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F8CC6C5A13491755F8734959 /* Frameworks */ = {
@@ -260,10 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AF30BB1FAE2DB200EF2235 /* HomeController.swift in Sources */,
+				33CD14341FAE4C51008A12B6 /* CustomImageView.swift in Sources */,
 				33AF30C51FAE334700EF2235 /* Extensions.swift in Sources */,
 				33AF30C31FAE331500EF2235 /* Anime.swift in Sources */,
 				33AF30A51FAE2AA300EF2235 /* AppDelegate.swift in Sources */,
+				33CD14311FAE4C1B008A12B6 /* AnimeCell.swift in Sources */,
 				33AF30BF1FAE32D700EF2235 /* ApiService.swift in Sources */,
+				33CD142F1FAE4C06008A12B6 /* AnimeSliderCell.swift in Sources */,
 				33AF30C11FAE32E500EF2235 /* Urls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
