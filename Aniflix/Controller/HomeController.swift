@@ -10,12 +10,30 @@ import UIKit
 import SVProgressHUD
 
 
+
 class HomeController:UITableViewController {
     
     var animes = [[Anime]]()
+    var accessToken = ""
     
     let sliderCellId = "animeSliderCellId"
     let itemCellId = "animeCellId"
+    
+    var types = ["TV","TV Short","Movie","Special","OVA","ONA","Music"]
+    
+    lazy var searchController:UISearchController = {
+        let resultsController = SearchResultsController(style: .grouped)
+        let searchController = UISearchController(searchResultsController: resultsController)
+        searchController.searchResultsUpdater = resultsController // resultsController now is responsible for UISearchResultsUpdating Delegate
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.dimsBackgroundDuringPresentation = true
+        searchController.searchBar.searchBarStyle = .minimal
+        searchController.searchBar.sizeToFit()
+        definesPresentationContext = true // This line keeps the Searchbar visible in iOS 11
+        return searchController
+    }()
+    
+    let selectAnimeNotification = Notification.Name("com.skylabs.Aniflix.selectAnime")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,52 +41,73 @@ class HomeController:UITableViewController {
         fetchData()
         setupTableView()
         setupNavbar()
+        setupObserver()
     }
-    
     
     
     private func setupNavbar() {
         title = "Aniflix"
+        
         if #available(iOS 11, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
+            navigationItem.hidesSearchBarWhenScrolling = false
+            navigationItem.searchController = searchController
+        } else {
+            self.tableView.tableHeaderView = searchController.searchBar
         }
     }
     
+    private func setupObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didSelectAnime(notification:)), name: selectAnimeNotification, object: nil)
+    }
+    
+    @objc public func didSelectAnime(notification:Notification) {
+        self.searchController.isActive = false
+        guard let id = notification.object as? Int else {return}
+        showDetailsViewController(with: id)
+    }
+    
+    private func showDetailsViewController(with animeId:Int) {
+        let vc = DetailController(style: .plain)
+        vc.animeId = animeId
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     private func fetchData() {
-        
         SVProgressHUD.show(withStatus: "Loading series")
         ApiService.sharedInstance.callWSAuthAccessToken { (success:Bool, accessToken:String?) in
             if success, let at = accessToken {
-                self.fetchAnimeData(at)
+                for i in 0...self.types.count - 1 {
+                    self.animes.append([])
+                    self.fetchAnimeDataWith(at, 1, self.types[i])
+                    self.insertionTypes[self.types[i]] = i
+                }
             }
         }
     }
     
-    private func fetchAnimeData(_ accessToken:String) {
-        ApiService.sharedInstance.callWSBrowseAnime(accessToken) { (success, animeArr) in
+    var animesTV = [Anime]()
+    var insertionTypes = [String:Int]()
+    
+    private func fetchAnimeDataWith(_ accessToken:String, _ page:Int, _ type:String) {
+        self.accessToken = accessToken
+        ApiService.sharedInstance.callWSBrowseAnime(accessToken,page,type) { (success, animeArr) in
             if success {
-                var animeTv = [Anime]()
-                var animeMovie = [Anime]()
-                var animeOva = [Anime]()
-                for ani in animeArr! {
-                    if ani.type == "TV" {
-                        animeTv.append(ani)
-                    } else if ani.type == "Movie" {
-                        animeMovie.append(ani)
-                    } else {
-                        animeOva.append(ani)
-                    }
-                }
-                self.animes.append(animeTv)
-                self.animes.append(animeMovie)
-                self.animes.append(animeOva)
+                guard let i = self.insertionTypes[type] else {return}
+                self.animes[i] = self.animes[i] + animeArr!
                 SVProgressHUD.dismiss()
                 DispatchQueue.main.async {
+                    let contentOffset = self.tableView.contentOffset
                     self.tableView.reloadData()
+                    self.tableView.layoutIfNeeded()
+                    self.tableView.setContentOffset(contentOffset, animated: false)
                 }
             }
         }
     }
+    
+    
     
     private func setupTableView() {
         tableView.register(AnimeSliderCell.self , forCellReuseIdentifier: sliderCellId)
@@ -80,10 +119,8 @@ class HomeController:UITableViewController {
         return animes.count
     }
     
-    
-    var headers = ["TV Anime series","Movies","OVAs"]
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return headers[section]
+        return types[section]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -116,6 +153,10 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: itemCellId, for: indexPath) as! AnimeCell
+        if indexPath.item == self.animes[collectionView.tag].count - 1 {
+            let nextPage = self.animes[collectionView.tag].count / 40 + 1
+            self.fetchAnimeDataWith(self.accessToken, nextPage, types[collectionView.tag])
+        }
         cell.anime = self.animes[collectionView.tag][indexPath.item]
         return cell
     }
@@ -125,9 +166,8 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = DetailController(style: .plain)
-        vc.animeId = self.animes[collectionView.tag][indexPath.item].id
-        navigationController?.pushViewController(vc, animated: true)
+        self.showDetailsViewController(with: self.animes[collectionView.tag][indexPath.item].id)
     }
 }
+
 

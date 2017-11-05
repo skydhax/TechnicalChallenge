@@ -42,12 +42,15 @@ class ApiService: NSObject {
     }
     
     
-    func callWSBrowseAnime( _ accessToken:String ,_ completion: @escaping (Bool,[Anime]?) -> () ) {
-        let url = URL(string: Urls.browseAnime)!
+    //browse/anime?page={page}&type={type}
+    func callWSBrowseAnime( _ accessToken:String, _ page:Int, _ type:String ,_ completion: @escaping (Bool,[Anime]?) -> () ) {
+        let body = "?page=\(page)&type=\(type.replacingOccurrences(of: " ", with: "%20"))"
+        let url = URL(string: Urls.browseAnime + body)!
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        //request.httpBody = body.data(using: .utf8)
         request.cachePolicy = .reloadIgnoringLocalCacheData
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         let session = URLSession(configuration: sessionConfig, delegate: self as? URLSessionDelegate, delegateQueue: nil)
@@ -56,9 +59,9 @@ class ApiService: NSObject {
                 completion(false,nil)
                 return
             }
-            if let returnData = String(data: data!, encoding: .utf8) {
-                print(returnData)
-            }
+//            if let returnData = String(data: data!, encoding: .utf8) {
+//                print(returnData)
+//            }
             if let unwrappedData = data {
                 do {
                     let animeArr = try JSONDecoder().decode([Anime].self , from: unwrappedData)
@@ -70,9 +73,8 @@ class ApiService: NSObject {
         }).resume()
     }
     
-    //{id}/page
     func callWSGetAnimeDetails( _ accessToken:String, _ id:Int ,_ completion: @escaping (Bool,Anime?) -> () ) {
-        let url = URL(string: Urls.getAnimeDetails + "\(id)/page")!
+        let url = URL(string: Urls.animeRoute + "\(id)/page")! // anime/{id}/page
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
         var request = URLRequest(url: url)
@@ -85,12 +87,41 @@ class ApiService: NSObject {
                 completion(false,nil)
                 return
             }
-            if let returnData = String(data: data!, encoding: .utf8) {
-                print(returnData)
-            }
+//            if let returnData = String(data: data!, encoding: .utf8) {
+//                print(returnData)
+//            }
             if let unwrappedData = data {
                 do {
                     let anime = try JSONDecoder().decode(Anime.self , from: unwrappedData)
+                    completion(true,anime)
+                } catch let err {
+                    print(err.localizedDescription)
+                }
+            }
+        }).resume()
+    }
+    
+    
+    func callWSSearchAnime( _ accessToken:String, _ query:String ,_ completion: @escaping (Bool,[Anime]?) -> () ) {
+        let url = URL(string: Urls.animeRoute + "search/\(query.replacingOccurrences(of: " ", with: "%20"))")! // anime/search/{query}
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let session = URLSession(configuration: sessionConfig, delegate: self as? URLSessionDelegate, delegateQueue: nil)
+        session.dataTask(with: request, completionHandler: {(data, response, error) in
+            guard error == nil else {
+                completion(false,nil)
+                return
+            }
+//          if let returnData = String(data: data!, encoding: .utf8) {
+//                print(returnData)
+//          }
+            if let unwrappedData = data {
+                do {
+                    let anime = try JSONDecoder().decode([Anime].self , from: unwrappedData)
                     completion(true,anime)
                 } catch let err {
                     print(err.localizedDescription)
