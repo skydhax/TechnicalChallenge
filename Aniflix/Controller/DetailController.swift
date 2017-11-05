@@ -40,18 +40,27 @@ class DetailController:UITableViewController {
         ApiService.sharedInstance.callWSAuthAccessToken { (success:Bool, accessToken:String?) in
             if success, let at = accessToken {
                 self.fetchAnimeDetails(at, id)
+            } else {
+                SVProgressHUD.dismiss()
+                SVProgressHUD.showError(withStatus: "An error ocurred, please try later")
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
         }
     }
     
     private func fetchAnimeDetails(_ accessToken:String, _ id:Int) {
         ApiService.sharedInstance.callWSGetAnimeDetails(accessToken, id) { (success , anime) in
+            SVProgressHUD.dismiss()
             if success {
                 self.anime = anime!
                 self.setupData(anime!)
-                SVProgressHUD.dismiss()
             } else {
-                
+                SVProgressHUD.showError(withStatus: "An error ocurred, please try later")
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
             }
         }
     }
@@ -61,6 +70,12 @@ class DetailController:UITableViewController {
         properties.append(["Original title":anime.title_japanese])
         properties.append(["Romanji title":anime.title_romaji])
         properties.append(["Total Episodes": "\(anime.total_episodes)"])
+        if let d = anime.duration {
+            properties.append(["Duration": "\(d)"])
+        }
+        if let s = anime.hashtag {
+            properties.append(["Hashtag": s])
+        }
         properties.append(["Average Score": "\(anime.average_score)"])
         properties.append(["Type":anime.type])
         properties.append(["Adult": (anime.adult ? "Yes" : "No") ])
@@ -73,6 +88,23 @@ class DetailController:UITableViewController {
         }
         if let s = anime.season {
             properties.append(["Season":"\(s)"])
+        }
+        if anime.genres.count > 0 {
+            var gens = ""
+            for g in anime.genres {
+                gens += g + ", "
+            }
+            properties.append(["Genres":String(gens.dropLast(2))])
+        }
+        if anime.synonyms.count > 0 {
+            var syns = ""
+            for s in anime.synonyms {
+                syns += s + ", "
+            }
+            properties.append(["Synonyms":String(syns.dropLast(2))])
+        }
+        if let s = anime.source {
+            properties.append(["Source": s])
         }
         DispatchQueue.main.async {
             self.title = anime.title_english

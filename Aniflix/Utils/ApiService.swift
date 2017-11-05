@@ -44,7 +44,8 @@ class ApiService: NSObject {
     
     //browse/anime?page={page}&type={type}
     func callWSBrowseAnime( _ accessToken:String, _ page:Int, _ type:String ,_ completion: @escaping (Bool,[Anime]?) -> () ) {
-        let body = "?page=\(page)&type=\(type.replacingOccurrences(of: " ", with: "%20"))"
+        guard let escapedType = type.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
+        let body = "?page=\(page)&type=\(escapedType)"
         let url = URL(string: Urls.browseAnime + body)!
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
@@ -103,7 +104,8 @@ class ApiService: NSObject {
     
     
     func callWSSearchAnime( _ accessToken:String, _ query:String ,_ completion: @escaping (Bool,[Anime]?) -> () ) {
-        let url = URL(string: Urls.animeRoute + "search/\(query.replacingOccurrences(of: " ", with: "%20"))")! // anime/search/{query}
+        guard let escapedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
+        let url = URL(string: Urls.animeRoute + "search/\(escapedQuery)")! // anime/search/{query}
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(accessToken)"]
         var request = URLRequest(url: url)

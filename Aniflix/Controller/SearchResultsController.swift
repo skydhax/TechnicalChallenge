@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SearchResultsController: UITableViewController {
     
@@ -47,6 +48,11 @@ class SearchResultsController: UITableViewController {
                 self.animes = animes!
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                }
+            } else {
+                SVProgressHUD.showError(withStatus: "An error ocurred, please try later")
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true, completion: nil)
                 }
             }
         }

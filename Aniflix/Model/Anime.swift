@@ -32,7 +32,9 @@ class Anime:Decodable {
     
     // Anime model only values
     let total_episodes:Int
+    let duration:Int?
     let characters:[Character]?
     let airing_status:String?
     let hashtag:String?
+    let source:String?
 }
