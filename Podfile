@@ -7,5 +7,6 @@ target 'Aniflix' do
 
   # Pods for Aniflix
   pod 'SVProgressHUD'
+  pod 'PNChart'
 
 end

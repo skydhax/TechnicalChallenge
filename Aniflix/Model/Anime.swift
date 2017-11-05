@@ -29,6 +29,7 @@ class Anime:Decodable {
     let image_url_lge:String
     let image_url_banner:String?
     let updated_at:Int
+    let score_distribution:[Int:Int]?
     
     // Anime model only values
     let total_episodes:Int

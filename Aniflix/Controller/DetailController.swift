@@ -25,6 +25,7 @@ class DetailController:UITableViewController {
     let descriptionCellId = "descriptionCellId"
     let headerCellId = "headerCellId"
     let imageCellId = "imageCellId"
+    let barChartCellId = "barChartCellId"
     
     
     var properties = [[String:String]]()
@@ -128,30 +129,48 @@ class DetailController:UITableViewController {
         tableView.register(DetailDescriptionCell.self, forCellReuseIdentifier: descriptionCellId)
         tableView.register(DetailPairCell.self , forCellReuseIdentifier: detailPairCellId)
         tableView.register(DetailImageCell.self , forCellReuseIdentifier: imageCellId)
+        tableView.register(DetailBarChartCell.self , forCellReuseIdentifier: barChartCellId)
     }
     
     // MARK: - TableView Delegate methods
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return (anime != nil ? 4 : 0)
+        
+        if anime != nil {
+            var sects = 4
+            if self.anime?.score_distribution != nil {
+                sects += 1
+            }
+            return sects
+        } else {
+            return 0
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 || section == 1 {
+        if section == 0 || section == 1{
             return 1
         } else if section == 3 {
             return anime?.characters?.count ?? 0
+        } else if section == 4 {
+            return (anime?.score_distribution != nil ? 1 : 0)
         }
         return properties.count
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 3 || section == 4{
+            return 30
+        }
         return 0
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 3 {
             return "Characters"
+        } else if section ==  4 {
+            return "Score Distribution"
         }
         return nil
     }
@@ -164,6 +183,8 @@ class DetailController:UITableViewController {
             return UITableViewAutomaticDimension
         } else if indexPath.section == 3 {
             return 175
+        } else if indexPath.section == 4 {
+            return 200
         }
         return 44
     }
@@ -175,8 +196,10 @@ class DetailController:UITableViewController {
             return descriptionCell(tableView,indexPath)
         } else if indexPath.section == 2{
             return detailCell(tableView,indexPath)
-        } else {
+        } else if indexPath.section == 3{
             return characterCell(tableView,indexPath)
+        } else {
+            return barChartCell(tableView,indexPath)
         }
     }
     
@@ -207,6 +230,14 @@ class DetailController:UITableViewController {
     func characterCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: imageCellId, for: indexPath) as! DetailImageCell
         cell.character = self.anime?.characters?[indexPath.row]
+        return cell
+    }
+    
+    func barChartCell(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: barChartCellId, for: indexPath) as! DetailBarChartCell
+        if let scoreDistribution = anime?.score_distribution {
+            cell.scoreDistribution = scoreDistribution
+        }
         return cell
     }
     

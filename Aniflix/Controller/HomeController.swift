@@ -83,6 +83,9 @@ class HomeController:UITableViewController {
                     self.fetchAnimeDataWith(at, 1, self.types[i])
                     self.insertionTypes[self.types[i]] = i
                 }
+            } else {
+                SVProgressHUD.dismiss()
+                SVProgressHUD.showError(withStatus: "An error ocurred, please try later")
             }
         }
     }

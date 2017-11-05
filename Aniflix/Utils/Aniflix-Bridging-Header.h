@@ -13,3 +13,4 @@
 //#endif /* Aniflix_Bridging_Header_h */
 
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <PNChart/PNChart.h>

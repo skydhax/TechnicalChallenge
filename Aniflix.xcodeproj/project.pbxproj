@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3313239E1FAF87F800CE72BC /* DetailBarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3313239D1FAF87F800CE72BC /* DetailBarChartCell.swift */; };
 		33AF30A51FAE2AA300EF2235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */; };
 		33AF30AC1FAE2AA300EF2235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */; };
 		33AF30AF1FAE2AA300EF2235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AF30AD1FAE2AA300EF2235 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3313239D1FAF87F800CE72BC /* DetailBarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBarChartCell.swift; sourceTree = "<group>"; };
 		33AF30A11FAE2AA300EF2235 /* Aniflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aniflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AF30A41FAE2AA300EF2235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33AF30AB1FAE2AA300EF2235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				33CD143D1FAE7E81008A12B6 /* DetailDescriptionCell.swift */,
 				33CD14391FAE5F9C008A12B6 /* DetailPairCell.swift */,
 				33CD143F1FAE81EC008A12B6 /* DetailImageCell.swift */,
+				3313239D1FAF87F800CE72BC /* DetailBarChartCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,11 +267,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Aniflix/Pods-Aniflix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -310,6 +317,7 @@
 				33CD14311FAE4C1B008A12B6 /* AnimeCell.swift in Sources */,
 				33AF30BF1FAE32D700EF2235 /* ApiService.swift in Sources */,
 				33CD142F1FAE4C06008A12B6 /* AnimeSliderCell.swift in Sources */,
+				3313239E1FAF87F800CE72BC /* DetailBarChartCell.swift in Sources */,
 				33CD143E1FAE7E81008A12B6 /* DetailDescriptionCell.swift in Sources */,
 				33CD14361FAE5F28008A12B6 /* DetailController.swift in Sources */,
 				33AF30C11FAE32E500EF2235 /* Urls.swift in Sources */,

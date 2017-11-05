@@ -7,138 +7,339 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038061E121188FB1AD76C8F324D7EB3F /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E5DB554589C543F1B5859BB28A8CC /* SVProgressAnimatedView.m */; };
-		0CE377AD017B9EF77EF906B079AC1C70 /* Pods-Aniflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CE2CB7691994C10FE6D6F2F61151C /* Pods-Aniflix-dummy.m */; };
-		1175A513F1FF10D22ECA11CE833E726B /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6456237FB03F6CCC42CC65518735B70 /* SVRadialGradientLayer.m */; };
-		1DF2DAFFF4F6566D40586F52C45DC7A0 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1296BE4DDEB09F3CF2072C7073D7B3 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AC36991853472BBCD9C62793038BEAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
-		2FB14C566708B2ADE1E1948295DE93EB /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 170E247DAABF893060C8B9D458B792BA /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48D53373F54E5097793D0F80F46B92F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		65DC6D8705ECE1A9888D7938CDC4AE18 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF517DE80F33E8C6D4730D8C76266A8 /* SVIndefiniteAnimatedView.m */; };
-		7C1A7CEBD06BAAFB41EF448B845F984B /* Pods-Aniflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D652646BA33AB02E391D4850FF446749 /* Pods-Aniflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		804F51900818C97512A28A880E626320 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EB951A2AFCBDCFE1B3C8CAA45738F432 /* SVProgressHUD.m */; };
-		93EDF3504D358C276F396C28FEDD8490 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B9DE3366B1C5305DC7E5784E16F95 /* SVProgressHUD.bundle */; };
-		9F845DEA499FC3726947936091049644 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E71CFC73DB55784D0519F97BA41F995 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FF3032EEAF377914655687B72F8EB78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		AB67B20C0C49182B3E8739D5BFB2A13B /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDC9F27823E18CB972FB8AFD6B120F6 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8C99039F78AA5D8937A2386FCD0FCEE /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D39DF6CCC0BF2A43A2826E78E87405 /* SVProgressHUD-dummy.m */; };
-		F8DE68B64A8EB8FF508D42D11CC19102 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C448586FB64ED635E190F6904D743930 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01862E3DCB91BDA0B2F9BF024438DF78 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E683F098E77DD4D1D7228F3762BA4CA /* PNChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B8BB4C1D38774DB5F030E07364BDE1 /* Pods-Aniflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D652646BA33AB02E391D4850FF446749 /* Pods-Aniflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06724437C19D93B32D7704B0C849BCB6 /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BA695A9B26AA5DC7FF2F50656CACFA /* PNPieChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9A8FBCF70E343103AB476F5BDA9ABE /* PNChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 178BC16C9EC0D9F75DFB69402F73CBB1 /* PNChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F398E26AE00E6F38D5806634A484BFC /* PNRadarChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C51B1D64D3DDE2C5700038989F9FA363 /* PNRadarChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		104458EFF3C11532A799199F1B62EA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		13CDC577C93FD8EAC5979A0899712D91 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34EF919506F2EA1DC3A96BFB585214BA /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		184500A596EEC4930F80A406A694806E /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73483C7EBE0CCDD8F86329BE95FEFB75 /* SVProgressHUD-dummy.m */; };
+		228396459A5DFEE20A11FCBE2322446B /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 807332E08B99617AFEF318A0D8EBF4CC /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		23507D26F66CCB366FE0F6C1A0D185D1 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBD6381EC70A68B1E2857A45CCC760A /* PNScatterChartDataItem.m */; };
+		275CDB94DE5627044CA1E5689E71006A /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AF55EF6F63D052B9B2DD66865E5132 /* PNScatterChartData.m */; };
+		2A670F9A61E0A74AE89985B0AB73EBD8 /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 21AF0D5752AF9FE8C04C32AE035497D8 /* PNPieChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30D3210324DB17502F91862D181A5DAA /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C13EC1515499328F80A90B241AEA48 /* PNBar.m */; };
+		38D902F7B1F5B0ECDA7B552AE201F02F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */; };
+		3951AA0F503376DDF9D6FF81717EC1DB /* PNScatterChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BEA14D68FA43B73E7EECE7F6A661F1 /* PNScatterChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFD533C942D8681B68B17BCD3C995F6 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C71B252FA1F31798D2EF1A4C948112E /* PNGenericChart.m */; };
+		3F006C5DA2EEA45E157440B08535F16C /* PNScatterChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F61EA495944A6825373C606DAEAEAB /* PNScatterChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415EFB6537A3F68F71C09A5B099DCC8A /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A27770259D9DC10B446F50F5CD2CC10 /* PNColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43108E20843C6A047C34B89A63CDE9C6 /* PNChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7538C98C731AE6526DB0B87A8CA0F970 /* PNChart-dummy.m */; };
+		47EB05F507CC96A5A8778049FA04E494 /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 421744ECA38061DD69DB3431BCF76938 /* PNLineChart.m */; };
+		48B7466719A82BEC4EE44F40B6158B85 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7A3C6FD7A25B95DC28F858CB5B4283 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49DBBCC302C3055F99A1F860042CC4CE /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = B4FF597F141DF0BE174C3C13AF1E74FA /* PNBarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BCB2CBDC087976472B43A7A99298A78 /* Pods-Aniflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CE2CB7691994C10FE6D6F2F61151C /* Pods-Aniflix-dummy.m */; };
+		4D871E78B0F660F6B50FC41EF7462E97 /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 8085303005A2DCA58974F564F8463E96 /* PNRadarChart.m */; };
+		4E546FE3E7EC37C7300F189766082A39 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E24E06260E3DD72E7BE4B55E4B6081B9 /* UICountingLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B2B60C4E0425695947C754528998EA /* PNScatterChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = F1252CB18980BCA407CBFF141455EB21 /* PNScatterChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D791026E20DF9A2B254FD7D11D6DB39 /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF88B768C688A77FD68CDE812666358 /* PNRadarChartDataItem.m */; };
+		79A1A20C26E7759F31EE5A64D90F8E6F /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F182E32D693CC88C7A53166750DEF1A /* PNLineChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83CA2377B55DD2D5EB6DE486AC459A54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		884AA25551C1E0897CB5332890C4A400 /* UICountingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A50818BDF9311A9076E1BED878CE6F07 /* UICountingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B30BC5802A7ADA5328BE6079D1C7440 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCBB15374AAE806EA4408BA4F0B172B /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D0A8407E6C2577C48DEDBF16BF8B469 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E8B1C980C7F3CAAD98BBDBD10BD787 /* PNLineChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E1DEC97CC5767A4B537AA988BE21B6D /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 867E25282078C52906E6FBC5269AA525 /* PNPieChart.m */; };
+		8ED82E4BB5088B3BC288B53EFD9B9106 /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85E8E2B8F59A4C5302239FD7708FB4 /* PNLineChartData.m */; };
+		95FD1115550A44FBCEEBB8269E573545 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F8204B2DEE5FBE92659A6F1450ABA763 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975E65AF5274D9E271902795BBE5AD9B /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */; };
+		9A188B2744B9ADBAE00CA89FF8A04B16 /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 666524F549BFE9665087B178EC449063 /* PNCircleChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BADCA5679C8A8A66E61ADDDB0632098 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */; };
+		9D463C13702FAEA9AA93F1FC99655BD8 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF631355E5175D9A5BAED266DD39F3C /* PNChartLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11A1315C6BDD64DEAC521872F3F8A6D /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5034DC03A15D4EEC392E05766F67234B /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB66EDB01E996BC6F5BFFD4534B6C21 /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2245F19C9144BB1F616858F96C94B2CB /* PNLineChartDataItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0B38CEF187AFB6DCB1E248F89F73B4E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96789F630535F30BB79DDA049AE4A33E /* SVRadialGradientLayer.m */; };
+		B3174CE1F7CEC7E4986A14E9C4EAA5ED /* UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 515576A588FC9FC80A1C13C9A26B324B /* UICountingLabel-dummy.m */; };
+		BCA98672348F4BE5B74F67CCEB68B3AE /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 028BF08C4128C752E113783E686F93A1 /* PNBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C344EA4B1862D8F0074DAE36CE9F08A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */; };
+		C4EE62268D6120CCD9132F31FAA79B0C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 005F2B7E5343963148A33D2E1A07CAC4 /* SVProgressHUD.bundle */; };
+		CA847ADF445C8C5454B1999A89D1F137 /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC3505FF6C7C3A2EDB706325D919F62B /* PNChartDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46DF427577E7AB87ED36E29CD8937D9 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B8582B6A7ECE2B48FB687EF792D40 /* PNLineChartDataItem.m */; };
+		DAAB15D1FF9B62D061DF3A73E8D11050 /* PNRadarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F72A37DAB075DDE7D9A26E11D513491 /* PNRadarChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCB7CC08FC235B33EDC5F8957848B565 /* PNGenericChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F23D9DEB06C29364DB69B044F15A26 /* PNGenericChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF8F4C447D73F08682A89276EB7924E7 /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B0EA6881CFC317440AF919DF6B6CDA /* PNPieChartDataItem.m */; };
+		E519B695BA04E61B6F6B8C6E5FBE74B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		E6543B0E8A962B065B29B9E4EE1A904D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */; };
+		E796A21084CB74808F974C8BA28BF38A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F68E8D64A40F8C00FCA68594A4A7E0 /* SVProgressHUD.m */; };
+		F235ED9B684806084D20AEDAE4EA88AB /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99738D0F89288390318F2259BF105B98 /* SVProgressAnimatedView.m */; };
+		F3B69FAAAA7F3B62E1130C2DD172C986 /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 31774EAD9520C2C6AA12BCDBC9F59C3A /* PNScatterChart.m */; };
+		F518C92F8521475ACF30FA6ABCB4768F /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F96C3554D37B5F142A8E41B3B2D6E9E /* PNCircleChart.m */; };
+		F6437A9168D825D17B7E2BF5C1C2E81D /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F17135D8FB5785B54F8ABCC81DFD5BEC /* PNChartLabel.m */; };
+		F9E2ADF16B7E435B5CFD259CF709FBC0 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D3DEA8F369AA4C17FDA05E319A89B9 /* SVIndefiniteAnimatedView.m */; };
+		FC0638C57BE88E9577E9989B97D1E099 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ECC19948094C340A73704CAD5C50FE /* PNBarChart.m */; };
+		FCC1436792EA4C37502DE74FC2DCDEF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */; };
+		FF884F1ECBE6F4B32FB84E46AD8C28A9 /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0ADEB8502B7AAC3A80C699145AC572 /* PNColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CCE45C422E284BD643D7C0CA9E2B0B6 /* PBXContainerItemProxy */ = {
+		2331FC354592179C10840D17D20A7DB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7F820C61571E05BFFA865D2C7027B2CD;
+			remoteGlobalIDString = DA392EE8E5B24D16FB9910405A0AFC2E;
+			remoteInfo = UICountingLabel;
+		};
+		801121762C0FE974EC5901E2C93636B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B97099A3D5269A77E9534AD014B9CD16;
 			remoteInfo = SVProgressHUD;
+		};
+		ADCCE5574C7831E9A077538A4814A0DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA392EE8E5B24D16FB9910405A0AFC2E;
+			remoteInfo = UICountingLabel;
+		};
+		BAE30878D4B2E6C206A443C516C56523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FC1CB21D1B64FAAC47A6478616DA728;
+			remoteInfo = PNChart;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		005F2B7E5343963148A33D2E1A07CAC4 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		011178E7D43DDFCD6559162039E2318B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028BF08C4128C752E113783E686F93A1 /* PNBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = PNChart/PNBar.h; sourceTree = "<group>"; };
+		05C13EC1515499328F80A90B241AEA48 /* PNBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = PNChart/PNBar.m; sourceTree = "<group>"; };
+		06FA6D3B17010E484AD220C9BA126188 /* PNChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNChart.xcconfig; sourceTree = "<group>"; };
 		07A4E006E2845A8D8BCDF744A48A8376 /* Pods-Aniflix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Aniflix.modulemap"; sourceTree = "<group>"; };
+		08B0EA6881CFC317440AF919DF6B6CDA /* PNPieChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChartDataItem.m; path = PNChart/PNPieChartDataItem.m; sourceTree = "<group>"; };
 		0BA1F087FCC844E3981A60706F64811F /* Pods-Aniflix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aniflix-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F4B8582B6A7ECE2B48FB687EF792D40 /* PNLineChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartDataItem.m; path = PNChart/PNLineChartDataItem.m; sourceTree = "<group>"; };
+		0F72A37DAB075DDE7D9A26E11D513491 /* PNRadarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChart.h; path = PNChart/PNRadarChart.h; sourceTree = "<group>"; };
+		10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		12EEEA5BFE0C78E0505D238AC84D025D /* PNChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PNChart.framework; path = PNChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B6AD1B55AB203614B9ECC4751437FF /* Pods-Aniflix-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aniflix-resources.sh"; sourceTree = "<group>"; };
-		170E247DAABF893060C8B9D458B792BA /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		1A2B9DE3366B1C5305DC7E5784E16F95 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		159FD621A58582B22F96F2A15D5C68D3 /* Pods_Aniflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aniflix.framework; path = "Pods-Aniflix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		178BC16C9EC0D9F75DFB69402F73CBB1 /* PNChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-umbrella.h"; sourceTree = "<group>"; };
+		19BEA14D68FA43B73E7EECE7F6A661F1 /* PNScatterChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChart.h; path = PNChart/PNScatterChart.h; sourceTree = "<group>"; };
 		1D9CE2CB7691994C10FE6D6F2F61151C /* Pods-Aniflix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aniflix-dummy.m"; sourceTree = "<group>"; };
-		2679B3EC886CA1A15A8BDBCB65D66449 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		2988254A2C939350D3051CEC7F5A5BBE /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CDC9F27823E18CB972FB8AFD6B120F6 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		1F96C3554D37B5F142A8E41B3B2D6E9E /* PNCircleChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNCircleChart.m; path = PNChart/PNCircleChart.m; sourceTree = "<group>"; };
+		203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		21AF0D5752AF9FE8C04C32AE035497D8 /* PNPieChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChartDataItem.h; path = PNChart/PNPieChartDataItem.h; sourceTree = "<group>"; };
+		2245F19C9144BB1F616858F96C94B2CB /* PNLineChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartDataItem.h; path = PNChart/PNLineChartDataItem.h; sourceTree = "<group>"; };
+		27F68E8D64A40F8C00FCA68594A4A7E0 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		2C71B252FA1F31798D2EF1A4C948112E /* PNGenericChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGenericChart.m; path = PNChart/PNGenericChart.m; sourceTree = "<group>"; };
+		2DF631355E5175D9A5BAED266DD39F3C /* PNChartLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartLabel.h; path = PNChart/PNChartLabel.h; sourceTree = "<group>"; };
+		2E683F098E77DD4D1D7228F3762BA4CA /* PNChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChart.h; path = PNChart/PNChart.h; sourceTree = "<group>"; };
+		2FD37DE49239814FA80E06F433746BEB /* UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICountingLabel.xcconfig; sourceTree = "<group>"; };
+		316EEFC497ACBD151F4585F0D321DAB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31774EAD9520C2C6AA12BCDBC9F59C3A /* PNScatterChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChart.m; path = PNChart/PNScatterChart.m; sourceTree = "<group>"; };
+		33ECC19948094C340A73704CAD5C50FE /* PNBarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBarChart.m; path = PNChart/PNBarChart.m; sourceTree = "<group>"; };
+		34EF919506F2EA1DC3A96BFB585214BA /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		364DFADCCB7965E4ED4C8225EEAD2AC8 /* Pods-Aniflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aniflix.release.xcconfig"; sourceTree = "<group>"; };
 		3716BAEBAE7E1B8CF05BA7A0F2F499CB /* Pods-Aniflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aniflix.debug.xcconfig"; sourceTree = "<group>"; };
-		45345F371186FC1299293B470351C236 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B3EE2CF43271ABBF7E6CF2FFD805F60 /* Pods_Aniflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aniflix.framework; path = "Pods-Aniflix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BEAA1E26958CA0F086C526C865F774 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A27770259D9DC10B446F50F5CD2CC10 /* PNColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNColor.h; path = PNChart/PNColor.h; sourceTree = "<group>"; };
+		3F182E32D693CC88C7A53166750DEF1A /* PNLineChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartData.h; path = PNChart/PNLineChartData.h; sourceTree = "<group>"; };
+		421744ECA38061DD69DB3431BCF76938 /* PNLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChart.m; path = PNChart/PNLineChart.m; sourceTree = "<group>"; };
+		5034DC03A15D4EEC392E05766F67234B /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		515576A588FC9FC80A1C13C9A26B324B /* UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		55BA695A9B26AA5DC7FF2F50656CACFA /* PNPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChart.h; path = PNChart/PNPieChart.h; sourceTree = "<group>"; };
+		58F23D9DEB06C29364DB69B044F15A26 /* PNGenericChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGenericChart.h; path = PNChart/PNGenericChart.h; sourceTree = "<group>"; };
+		612C1BDDAF0762C87F09637746A2E50F /* UICountingLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UICountingLabel.modulemap; sourceTree = "<group>"; };
+		666524F549BFE9665087B178EC449063 /* PNCircleChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNCircleChart.h; path = PNChart/PNCircleChart.h; sourceTree = "<group>"; };
+		67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6A85E8E2B8F59A4C5302239FD7708FB4 /* PNLineChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartData.m; path = PNChart/PNLineChartData.m; sourceTree = "<group>"; };
+		6D0ADEB8502B7AAC3A80C699145AC572 /* PNColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNColor.m; path = PNChart/PNColor.m; sourceTree = "<group>"; };
+		73483C7EBE0CCDD8F86329BE95FEFB75 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		7538C98C731AE6526DB0B87A8CA0F970 /* PNChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNChart-dummy.m"; sourceTree = "<group>"; };
+		7D7A3C6FD7A25B95DC28F858CB5B4283 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		807332E08B99617AFEF318A0D8EBF4CC /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		8085303005A2DCA58974F564F8463E96 /* PNRadarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChart.m; path = PNChart/PNRadarChart.m; sourceTree = "<group>"; };
+		867E25282078C52906E6FBC5269AA525 /* PNPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChart.m; path = PNChart/PNPieChart.m; sourceTree = "<group>"; };
+		90E8B1C980C7F3CAAD98BBDBD10BD787 /* PNLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChart.h; path = PNChart/PNLineChart.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A1296BE4DDEB09F3CF2072C7073D7B3 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		9E71CFC73DB55784D0519F97BA41F995 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		9F3E5DB554589C543F1B5859BB28A8CC /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		A8D39DF6CCC0BF2A43A2826E78E87405 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		AAF517DE80F33E8C6D4730D8C76266A8 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		95CD838AD47B4B0628E2DABF1C659440 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96789F630535F30BB79DDA049AE4A33E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		99738D0F89288390318F2259BF105B98 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		9CCBB15374AAE806EA4408BA4F0B172B /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		A50818BDF9311A9076E1BED878CE6F07 /* UICountingLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-umbrella.h"; sourceTree = "<group>"; };
+		A8B42D4487C6CECED2200CC30E732109 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		AC3505FF6C7C3A2EDB706325D919F62B /* PNChartDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartDelegate.h; path = PNChart/PNChartDelegate.h; sourceTree = "<group>"; };
+		ACF88B768C688A77FD68CDE812666358 /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNRadarChartDataItem.m; path = PNChart/PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B4FF597F141DF0BE174C3C13AF1E74FA /* PNBarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = PNChart/PNBarChart.h; sourceTree = "<group>"; };
+		B6AF55EF6F63D052B9B2DD66865E5132 /* PNScatterChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartData.m; path = PNChart/PNScatterChartData.m; sourceTree = "<group>"; };
+		B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1312E0C4C1640B7F09AFCDC2A4B0F8 /* Pods-Aniflix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aniflix-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C448586FB64ED635E190F6904D743930 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		C1D40FBEA3557C5883ECEBBE53CE0CFE /* PNChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PNChart.modulemap; sourceTree = "<group>"; };
+		C51B1D64D3DDE2C5700038989F9FA363 /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNRadarChartDataItem.h; path = PNChart/PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		C5BEE0B8C962FE3547559D4E955B4D72 /* UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
 		C79B9F62322FA134C3A898CC75B01F6C /* Pods-Aniflix-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aniflix-frameworks.sh"; sourceTree = "<group>"; };
 		D652646BA33AB02E391D4850FF446749 /* Pods-Aniflix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aniflix-umbrella.h"; sourceTree = "<group>"; };
-		D6C04C9F65BB3580D5536C9CA7EE9474 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9E0A8598E01887BB17C48B654F0E09B /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		E6456237FB03F6CCC42CC65518735B70 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		EB951A2AFCBDCFE1B3C8CAA45738F432 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		DD96245F52B70A61E2C9275E2F75DFB6 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		DDB5362EB2F2D1C87451F850F7E2D26F /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICountingLabel.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24E06260E3DD72E7BE4B55E4B6081B9 /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		E3F61EA495944A6825373C606DAEAEAB /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartDataItem.h; path = PNChart/PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		E5BF6E9EBE4AB0089A212467F0A37ABA /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		E8D3DEA8F369AA4C17FDA05E319A89B9 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		F1252CB18980BCA407CBFF141455EB21 /* PNScatterChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartData.h; path = PNChart/PNScatterChartData.h; sourceTree = "<group>"; };
+		F17135D8FB5785B54F8ABCC81DFD5BEC /* PNChartLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChartLabel.m; path = PNChart/PNChartLabel.m; sourceTree = "<group>"; };
+		F42AB781B3C3661A0C48C5A0C8622E46 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8204B2DEE5FBE92659A6F1450ABA763 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		F8BC86A6C53979EEF0D89E121CB02DC7 /* PNChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChart-prefix.pch"; sourceTree = "<group>"; };
+		FFBD6381EC70A68B1E2857A45CCC760A /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7CD65E3B134FCC484AA184E22A54A5A7 /* Frameworks */ = {
+		5C90B6B33EA9D9A517DF08F0116E9AC9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF3032EEAF377914655687B72F8EB78 /* Foundation.framework in Frameworks */,
+				FCC1436792EA4C37502DE74FC2DCDEF4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8C557DDF905A7FC533CA527E76CAF4E /* Frameworks */ = {
+		848FFABBBE25F555B7C8843674FAB8E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48D53373F54E5097793D0F80F46B92F4 /* Foundation.framework in Frameworks */,
-				2AC36991853472BBCD9C62793038BEAB /* QuartzCore.framework in Frameworks */,
+				9BADCA5679C8A8A66E61ADDDB0632098 /* CoreGraphics.framework in Frameworks */,
+				83CA2377B55DD2D5EB6DE486AC459A54 /* Foundation.framework in Frameworks */,
+				E6543B0E8A962B065B29B9E4EE1A904D /* QuartzCore.framework in Frameworks */,
+				975E65AF5274D9E271902795BBE5AD9B /* UICountingLabel.framework in Frameworks */,
+				C344EA4B1862D8F0074DAE36CE9F08A2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2128DC195195BFA091ECD8266976FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104458EFF3C11532A799199F1B62EA3C /* Foundation.framework in Frameworks */,
+				38D902F7B1F5B0ECDA7B552AE201F02F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E819796B8A08F626B76BB2078D26DE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519B695BA04E61B6F6B8C6E5FBE74B0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		01224E38F4F76FCC2F730568740C7E8C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
+				95CD838AD47B4B0628E2DABF1C659440 /* Info.plist */,
+				A8B42D4487C6CECED2200CC30E732109 /* SVProgressHUD.modulemap */,
+				DD96245F52B70A61E2C9275E2F75DFB6 /* SVProgressHUD.xcconfig */,
+				73483C7EBE0CCDD8F86329BE95FEFB75 /* SVProgressHUD-dummy.m */,
+				E5BF6E9EBE4AB0089A212467F0A37ABA /* SVProgressHUD-prefix.pch */,
+				34EF919506F2EA1DC3A96BFB585214BA /* SVProgressHUD-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
-		5831ECC27984A7B2FA00FEE7EF078CAB /* SVProgressHUD */ = {
+		361ED9697EA021733030D74FB92174E1 /* PNChart */ = {
 			isa = PBXGroup;
 			children = (
-				C448586FB64ED635E190F6904D743930 /* SVIndefiniteAnimatedView.h */,
-				AAF517DE80F33E8C6D4730D8C76266A8 /* SVIndefiniteAnimatedView.m */,
-				9E71CFC73DB55784D0519F97BA41F995 /* SVProgressAnimatedView.h */,
-				9F3E5DB554589C543F1B5859BB28A8CC /* SVProgressAnimatedView.m */,
-				2CDC9F27823E18CB972FB8AFD6B120F6 /* SVProgressHUD.h */,
-				EB951A2AFCBDCFE1B3C8CAA45738F432 /* SVProgressHUD.m */,
-				9A1296BE4DDEB09F3CF2072C7073D7B3 /* SVRadialGradientLayer.h */,
-				E6456237FB03F6CCC42CC65518735B70 /* SVRadialGradientLayer.m */,
-				9E09F6F6417032AB83C07907A8D7E815 /* Resources */,
-				AA5C3E6007857393B276FDAE952A73B6 /* Support Files */,
+				028BF08C4128C752E113783E686F93A1 /* PNBar.h */,
+				05C13EC1515499328F80A90B241AEA48 /* PNBar.m */,
+				B4FF597F141DF0BE174C3C13AF1E74FA /* PNBarChart.h */,
+				33ECC19948094C340A73704CAD5C50FE /* PNBarChart.m */,
+				2E683F098E77DD4D1D7228F3762BA4CA /* PNChart.h */,
+				AC3505FF6C7C3A2EDB706325D919F62B /* PNChartDelegate.h */,
+				2DF631355E5175D9A5BAED266DD39F3C /* PNChartLabel.h */,
+				F17135D8FB5785B54F8ABCC81DFD5BEC /* PNChartLabel.m */,
+				666524F549BFE9665087B178EC449063 /* PNCircleChart.h */,
+				1F96C3554D37B5F142A8E41B3B2D6E9E /* PNCircleChart.m */,
+				3A27770259D9DC10B446F50F5CD2CC10 /* PNColor.h */,
+				6D0ADEB8502B7AAC3A80C699145AC572 /* PNColor.m */,
+				58F23D9DEB06C29364DB69B044F15A26 /* PNGenericChart.h */,
+				2C71B252FA1F31798D2EF1A4C948112E /* PNGenericChart.m */,
+				90E8B1C980C7F3CAAD98BBDBD10BD787 /* PNLineChart.h */,
+				421744ECA38061DD69DB3431BCF76938 /* PNLineChart.m */,
+				3F182E32D693CC88C7A53166750DEF1A /* PNLineChartData.h */,
+				6A85E8E2B8F59A4C5302239FD7708FB4 /* PNLineChartData.m */,
+				2245F19C9144BB1F616858F96C94B2CB /* PNLineChartDataItem.h */,
+				0F4B8582B6A7ECE2B48FB687EF792D40 /* PNLineChartDataItem.m */,
+				55BA695A9B26AA5DC7FF2F50656CACFA /* PNPieChart.h */,
+				867E25282078C52906E6FBC5269AA525 /* PNPieChart.m */,
+				21AF0D5752AF9FE8C04C32AE035497D8 /* PNPieChartDataItem.h */,
+				08B0EA6881CFC317440AF919DF6B6CDA /* PNPieChartDataItem.m */,
+				0F72A37DAB075DDE7D9A26E11D513491 /* PNRadarChart.h */,
+				8085303005A2DCA58974F564F8463E96 /* PNRadarChart.m */,
+				C51B1D64D3DDE2C5700038989F9FA363 /* PNRadarChartDataItem.h */,
+				ACF88B768C688A77FD68CDE812666358 /* PNRadarChartDataItem.m */,
+				19BEA14D68FA43B73E7EECE7F6A661F1 /* PNScatterChart.h */,
+				31774EAD9520C2C6AA12BCDBC9F59C3A /* PNScatterChart.m */,
+				F1252CB18980BCA407CBFF141455EB21 /* PNScatterChartData.h */,
+				B6AF55EF6F63D052B9B2DD66865E5132 /* PNScatterChartData.m */,
+				E3F61EA495944A6825373C606DAEAEAB /* PNScatterChartDataItem.h */,
+				FFBD6381EC70A68B1E2857A45CCC760A /* PNScatterChartDataItem.m */,
+				F71FE31E72B06C6D1BE8BE57F4EA11E6 /* Support Files */,
+			);
+			name = PNChart;
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		414AFC348C90AC772B4D794CB3085701 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				005F2B7E5343963148A33D2E1A07CAC4 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B477602B8F1733F97B523D322BC3246 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				361ED9697EA021733030D74FB92174E1 /* PNChart */,
+				5D125AA1A061818BE5E5E93562B5604E /* SVProgressHUD */,
+				C11E18880F43F927B01F5935AE2327B3 /* UICountingLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D125AA1A061818BE5E5E93562B5604E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A3C6FD7A25B95DC28F858CB5B4283 /* SVIndefiniteAnimatedView.h */,
+				E8D3DEA8F369AA4C17FDA05E319A89B9 /* SVIndefiniteAnimatedView.m */,
+				9CCBB15374AAE806EA4408BA4F0B172B /* SVProgressAnimatedView.h */,
+				99738D0F89288390318F2259BF105B98 /* SVProgressAnimatedView.m */,
+				5034DC03A15D4EEC392E05766F67234B /* SVProgressHUD.h */,
+				27F68E8D64A40F8C00FCA68594A4A7E0 /* SVProgressHUD.m */,
+				F8204B2DEE5FBE92659A6F1450ABA763 /* SVRadialGradientLayer.h */,
+				96789F630535F30BB79DDA049AE4A33E /* SVRadialGradientLayer.m */,
+				414AFC348C90AC772B4D794CB3085701 /* Resources */,
+				01224E38F4F76FCC2F730568740C7E8C /* Support Files */,
 			);
 			name = SVProgressHUD;
 			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
-		74588D48F629C3D7E6B7E12AB83072D6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5831ECC27984A7B2FA00FEE7EF078CAB /* SVProgressHUD */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				74588D48F629C3D7E6B7E12AB83072D6 /* Pods */,
-				C449F902C53A163D57C2BA8DECE5A34F /* Products */,
+				E7558378B05AD4CBD1053EABE1357F06 /* Frameworks */,
+				4B477602B8F1733F97B523D322BC3246 /* Pods */,
+				9D930EB2E8BD339ADB0D2D32BDB551B5 /* Products */,
 				9BB518007A343F4F40082A31C4C9D18C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+		7E8DD510386F2532AE6A6B8A7FCDE421 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
-				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+				10089A14B451E9A962D07579E4163155 /* CoreGraphics.framework */,
+				AE4A990FF58368664D6B75F3465171E3 /* Foundation.framework */,
+				203ED675A3265A07DB1F1BB031CD518C /* QuartzCore.framework */,
+				67942C696292CC592FBEE3BA3005E34E /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -151,12 +352,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9E09F6F6417032AB83C07907A8D7E815 /* Resources */ = {
+		9D930EB2E8BD339ADB0D2D32BDB551B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A2B9DE3366B1C5305DC7E5784E16F95 /* SVProgressHUD.bundle */,
+				12EEEA5BFE0C78E0505D238AC84D025D /* PNChart.framework */,
+				159FD621A58582B22F96F2A15D5C68D3 /* Pods_Aniflix.framework */,
+				F42AB781B3C3661A0C48C5A0C8622E46 /* SVProgressHUD.framework */,
+				DDB5362EB2F2D1C87451F850F7E2D26F /* UICountingLabel.framework */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A27EBA8D22EE9E1652DACEC992033D96 /* Pods-Aniflix */ = {
@@ -177,63 +381,141 @@
 			path = "Target Support Files/Pods-Aniflix";
 			sourceTree = "<group>";
 		};
-		AA5C3E6007857393B276FDAE952A73B6 /* Support Files */ = {
+		C11E18880F43F927B01F5935AE2327B3 /* UICountingLabel */ = {
 			isa = PBXGroup;
 			children = (
-				D6C04C9F65BB3580D5536C9CA7EE9474 /* Info.plist */,
-				2679B3EC886CA1A15A8BDBCB65D66449 /* SVProgressHUD.modulemap */,
-				45345F371186FC1299293B470351C236 /* SVProgressHUD.xcconfig */,
-				A8D39DF6CCC0BF2A43A2826E78E87405 /* SVProgressHUD-dummy.m */,
-				D9E0A8598E01887BB17C48B654F0E09B /* SVProgressHUD-prefix.pch */,
-				170E247DAABF893060C8B9D458B792BA /* SVProgressHUD-umbrella.h */,
+				E24E06260E3DD72E7BE4B55E4B6081B9 /* UICountingLabel.h */,
+				807332E08B99617AFEF318A0D8EBF4CC /* UICountingLabel.m */,
+				DACFF0C908493081B31A5616CD95234C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
+			name = UICountingLabel;
+			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
-		C449F902C53A163D57C2BA8DECE5A34F /* Products */ = {
+		DACFF0C908493081B31A5616CD95234C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7B3EE2CF43271ABBF7E6CF2FFD805F60 /* Pods_Aniflix.framework */,
-				2988254A2C939350D3051CEC7F5A5BBE /* SVProgressHUD.framework */,
+				38BEAA1E26958CA0F086C526C865F774 /* Info.plist */,
+				612C1BDDAF0762C87F09637746A2E50F /* UICountingLabel.modulemap */,
+				2FD37DE49239814FA80E06F433746BEB /* UICountingLabel.xcconfig */,
+				515576A588FC9FC80A1C13C9A26B324B /* UICountingLabel-dummy.m */,
+				C5BEE0B8C962FE3547559D4E955B4D72 /* UICountingLabel-prefix.pch */,
+				A50818BDF9311A9076E1BED878CE6F07 /* UICountingLabel-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/UICountingLabel";
+			sourceTree = "<group>";
+		};
+		E7558378B05AD4CBD1053EABE1357F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9103AD49AA73F4AFAC5A6BD63F2B787 /* UICountingLabel.framework */,
+				7E8DD510386F2532AE6A6B8A7FCDE421 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F71FE31E72B06C6D1BE8BE57F4EA11E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				316EEFC497ACBD151F4585F0D321DAB0 /* Info.plist */,
+				C1D40FBEA3557C5883ECEBBE53CE0CFE /* PNChart.modulemap */,
+				06FA6D3B17010E484AD220C9BA126188 /* PNChart.xcconfig */,
+				7538C98C731AE6526DB0B87A8CA0F970 /* PNChart-dummy.m */,
+				F8BC86A6C53979EEF0D89E121CB02DC7 /* PNChart-prefix.pch */,
+				178BC16C9EC0D9F75DFB69402F73CBB1 /* PNChart-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PNChart";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		84715ED9AC917ECF8B934FF03ED9BC67 /* Headers */ = {
+		211C4D1C0ADFD781AD42B45CE9C134F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1A7CEBD06BAAFB41EF448B845F984B /* Pods-Aniflix-umbrella.h in Headers */,
+				BCA98672348F4BE5B74F67CCEB68B3AE /* PNBar.h in Headers */,
+				49DBBCC302C3055F99A1F860042CC4CE /* PNBarChart.h in Headers */,
+				0E9A8FBCF70E343103AB476F5BDA9ABE /* PNChart-umbrella.h in Headers */,
+				01862E3DCB91BDA0B2F9BF024438DF78 /* PNChart.h in Headers */,
+				CA847ADF445C8C5454B1999A89D1F137 /* PNChartDelegate.h in Headers */,
+				9D463C13702FAEA9AA93F1FC99655BD8 /* PNChartLabel.h in Headers */,
+				9A188B2744B9ADBAE00CA89FF8A04B16 /* PNCircleChart.h in Headers */,
+				415EFB6537A3F68F71C09A5B099DCC8A /* PNColor.h in Headers */,
+				DCB7CC08FC235B33EDC5F8957848B565 /* PNGenericChart.h in Headers */,
+				8D0A8407E6C2577C48DEDBF16BF8B469 /* PNLineChart.h in Headers */,
+				79A1A20C26E7759F31EE5A64D90F8E6F /* PNLineChartData.h in Headers */,
+				ADB66EDB01E996BC6F5BFFD4534B6C21 /* PNLineChartDataItem.h in Headers */,
+				06724437C19D93B32D7704B0C849BCB6 /* PNPieChart.h in Headers */,
+				2A670F9A61E0A74AE89985B0AB73EBD8 /* PNPieChartDataItem.h in Headers */,
+				DAAB15D1FF9B62D061DF3A73E8D11050 /* PNRadarChart.h in Headers */,
+				0F398E26AE00E6F38D5806634A484BFC /* PNRadarChartDataItem.h in Headers */,
+				3951AA0F503376DDF9D6FF81717EC1DB /* PNScatterChart.h in Headers */,
+				63B2B60C4E0425695947C754528998EA /* PNScatterChartData.h in Headers */,
+				3F006C5DA2EEA45E157440B08535F16C /* PNScatterChartDataItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB930CA94C9A99C6E6D292D59E247F26 /* Headers */ = {
+		21B51B531E90E0069E8D39147A40442B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8DE68B64A8EB8FF508D42D11CC19102 /* SVIndefiniteAnimatedView.h in Headers */,
-				9F845DEA499FC3726947936091049644 /* SVProgressAnimatedView.h in Headers */,
-				2FB14C566708B2ADE1E1948295DE93EB /* SVProgressHUD-umbrella.h in Headers */,
-				AB67B20C0C49182B3E8739D5BFB2A13B /* SVProgressHUD.h in Headers */,
-				1DF2DAFFF4F6566D40586F52C45DC7A0 /* SVRadialGradientLayer.h in Headers */,
+				48B7466719A82BEC4EE44F40B6158B85 /* SVIndefiniteAnimatedView.h in Headers */,
+				8B30BC5802A7ADA5328BE6079D1C7440 /* SVProgressAnimatedView.h in Headers */,
+				13CDC577C93FD8EAC5979A0899712D91 /* SVProgressHUD-umbrella.h in Headers */,
+				A11A1315C6BDD64DEAC521872F3F8A6D /* SVProgressHUD.h in Headers */,
+				95FD1115550A44FBCEEBB8269E573545 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C3E02DAFB3D0F4AF244CFA0D86EF4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884AA25551C1E0897CB5332890C4A400 /* UICountingLabel-umbrella.h in Headers */,
+				4E546FE3E7EC37C7300F189766082A39 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF51115BB3F648F856F6FE2A35737C04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B8BB4C1D38774DB5F030E07364BDE1 /* Pods-Aniflix-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F820C61571E05BFFA865D2C7027B2CD /* SVProgressHUD */ = {
+		0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4BBF8B705EF2A8224E9367FA723E388 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildConfigurationList = 6A92B5FD027CE987470A48E671364959 /* Build configuration list for PBXNativeTarget "PNChart" */;
 			buildPhases = (
-				7A6393B5F032C5F2E288536795967515 /* Sources */,
-				A8C557DDF905A7FC533CA527E76CAF4E /* Frameworks */,
-				BB930CA94C9A99C6E6D292D59E247F26 /* Headers */,
-				7BAE9E3ED02B8B4DCFA20F5884EE96B4 /* Resources */,
+				5EADEFF53DB0153A85451A7650D5A735 /* Sources */,
+				848FFABBBE25F555B7C8843674FAB8E0 /* Frameworks */,
+				211C4D1C0ADFD781AD42B45CE9C134F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6E55E784799B63E23A928EA091109E7 /* PBXTargetDependency */,
+			);
+			name = PNChart;
+			productName = PNChart;
+			productReference = 12EEEA5BFE0C78E0505D238AC84D025D /* PNChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B97099A3D5269A77E9534AD014B9CD16 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 452129BC9842BDBFAB196522CAB76D68 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				E4928F63BD5410F29816FDBA76C65196 /* Sources */,
+				C2128DC195195BFA091ECD8266976FB8 /* Frameworks */,
+				21B51B531E90E0069E8D39147A40442B /* Headers */,
+				352D9333E2DEFA0AAB02DB4EED234CBC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -241,25 +523,44 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = 2988254A2C939350D3051CEC7F5A5BBE /* SVProgressHUD.framework */;
+			productReference = F42AB781B3C3661A0C48C5A0C8622E46 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		855B0E39480DAAFF8A4C4AFE6AEB23FB /* Pods-Aniflix */ = {
+		DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC498EB790A4F3DDEA960E519E4540AC /* Build configuration list for PBXNativeTarget "Pods-Aniflix" */;
+			buildConfigurationList = 9A22DE6618BE94C542426A3608C6D3E5 /* Build configuration list for PBXNativeTarget "UICountingLabel" */;
 			buildPhases = (
-				4EA3D0E5BE03E8DF9DF4AE8726ADCEA3 /* Sources */,
-				7CD65E3B134FCC484AA184E22A54A5A7 /* Frameworks */,
-				84715ED9AC917ECF8B934FF03ED9BC67 /* Headers */,
+				B1C9814C48D22FEA9B79FC3347917297 /* Sources */,
+				5C90B6B33EA9D9A517DF08F0116E9AC9 /* Frameworks */,
+				89C3E02DAFB3D0F4AF244CFA0D86EF4C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				20C079E7B91A1ACA83B5707BA837D857 /* PBXTargetDependency */,
+			);
+			name = UICountingLabel;
+			productName = UICountingLabel;
+			productReference = DDB5362EB2F2D1C87451F850F7E2D26F /* UICountingLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB97113BAA0E062BCA577517DEA3552D /* Pods-Aniflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F783D0FAA7F94C1B76C56BCAF952781 /* Build configuration list for PBXNativeTarget "Pods-Aniflix" */;
+			buildPhases = (
+				C297671A40FC96C8E2928ACB676C7C98 /* Sources */,
+				E819796B8A08F626B76BB2078D26DE1A /* Frameworks */,
+				FF51115BB3F648F856F6FE2A35737C04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC30BBA92CAD16DDA37E1E6CB27B6D67 /* PBXTargetDependency */,
+				6DAED413605E759A9B0BD866BF5CB69B /* PBXTargetDependency */,
+				9B31656DDF8CE29AB58DE906E09BC47C /* PBXTargetDependency */,
 			);
 			name = "Pods-Aniflix";
 			productName = "Pods-Aniflix";
-			productReference = 7B3EE2CF43271ABBF7E6CF2FFD805F60 /* Pods_Aniflix.framework */;
+			productReference = 159FD621A58582B22F96F2A15D5C68D3 /* Pods_Aniflix.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -279,63 +580,150 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C449F902C53A163D57C2BA8DECE5A34F /* Products */;
+			productRefGroup = 9D930EB2E8BD339ADB0D2D32BDB551B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				855B0E39480DAAFF8A4C4AFE6AEB23FB /* Pods-Aniflix */,
-				7F820C61571E05BFFA865D2C7027B2CD /* SVProgressHUD */,
+				0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */,
+				DB97113BAA0E062BCA577517DEA3552D /* Pods-Aniflix */,
+				B97099A3D5269A77E9534AD014B9CD16 /* SVProgressHUD */,
+				DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7BAE9E3ED02B8B4DCFA20F5884EE96B4 /* Resources */ = {
+		352D9333E2DEFA0AAB02DB4EED234CBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93EDF3504D358C276F396C28FEDD8490 /* SVProgressHUD.bundle in Resources */,
+				C4EE62268D6120CCD9132F31FAA79B0C /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4EA3D0E5BE03E8DF9DF4AE8726ADCEA3 /* Sources */ = {
+		5EADEFF53DB0153A85451A7650D5A735 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE377AD017B9EF77EF906B079AC1C70 /* Pods-Aniflix-dummy.m in Sources */,
+				30D3210324DB17502F91862D181A5DAA /* PNBar.m in Sources */,
+				FC0638C57BE88E9577E9989B97D1E099 /* PNBarChart.m in Sources */,
+				43108E20843C6A047C34B89A63CDE9C6 /* PNChart-dummy.m in Sources */,
+				F6437A9168D825D17B7E2BF5C1C2E81D /* PNChartLabel.m in Sources */,
+				F518C92F8521475ACF30FA6ABCB4768F /* PNCircleChart.m in Sources */,
+				FF884F1ECBE6F4B32FB84E46AD8C28A9 /* PNColor.m in Sources */,
+				3AFD533C942D8681B68B17BCD3C995F6 /* PNGenericChart.m in Sources */,
+				47EB05F507CC96A5A8778049FA04E494 /* PNLineChart.m in Sources */,
+				8ED82E4BB5088B3BC288B53EFD9B9106 /* PNLineChartData.m in Sources */,
+				D46DF427577E7AB87ED36E29CD8937D9 /* PNLineChartDataItem.m in Sources */,
+				8E1DEC97CC5767A4B537AA988BE21B6D /* PNPieChart.m in Sources */,
+				DF8F4C447D73F08682A89276EB7924E7 /* PNPieChartDataItem.m in Sources */,
+				4D871E78B0F660F6B50FC41EF7462E97 /* PNRadarChart.m in Sources */,
+				6D791026E20DF9A2B254FD7D11D6DB39 /* PNRadarChartDataItem.m in Sources */,
+				F3B69FAAAA7F3B62E1130C2DD172C986 /* PNScatterChart.m in Sources */,
+				275CDB94DE5627044CA1E5689E71006A /* PNScatterChartData.m in Sources */,
+				23507D26F66CCB366FE0F6C1A0D185D1 /* PNScatterChartDataItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A6393B5F032C5F2E288536795967515 /* Sources */ = {
+		B1C9814C48D22FEA9B79FC3347917297 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65DC6D8705ECE1A9888D7938CDC4AE18 /* SVIndefiniteAnimatedView.m in Sources */,
-				038061E121188FB1AD76C8F324D7EB3F /* SVProgressAnimatedView.m in Sources */,
-				D8C99039F78AA5D8937A2386FCD0FCEE /* SVProgressHUD-dummy.m in Sources */,
-				804F51900818C97512A28A880E626320 /* SVProgressHUD.m in Sources */,
-				1175A513F1FF10D22ECA11CE833E726B /* SVRadialGradientLayer.m in Sources */,
+				B3174CE1F7CEC7E4986A14E9C4EAA5ED /* UICountingLabel-dummy.m in Sources */,
+				228396459A5DFEE20A11FCBE2322446B /* UICountingLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C297671A40FC96C8E2928ACB676C7C98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BCB2CBDC087976472B43A7A99298A78 /* Pods-Aniflix-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4928F63BD5410F29816FDBA76C65196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E2ADF16B7E435B5CFD259CF709FBC0 /* SVIndefiniteAnimatedView.m in Sources */,
+				F235ED9B684806084D20AEDAE4EA88AB /* SVProgressAnimatedView.m in Sources */,
+				184500A596EEC4930F80A406A694806E /* SVProgressHUD-dummy.m in Sources */,
+				E796A21084CB74808F974C8BA28BF38A /* SVProgressHUD.m in Sources */,
+				B0B38CEF187AFB6DCB1E248F89F73B4E /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20C079E7B91A1ACA83B5707BA837D857 /* PBXTargetDependency */ = {
+		6DAED413605E759A9B0BD866BF5CB69B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = 7F820C61571E05BFFA865D2C7027B2CD /* SVProgressHUD */;
-			targetProxy = 3CCE45C422E284BD643D7C0CA9E2B0B6 /* PBXContainerItemProxy */;
+			target = B97099A3D5269A77E9534AD014B9CD16 /* SVProgressHUD */;
+			targetProxy = 801121762C0FE974EC5901E2C93636B9 /* PBXContainerItemProxy */;
+		};
+		9B31656DDF8CE29AB58DE906E09BC47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */;
+			targetProxy = ADCCE5574C7831E9A077538A4814A0DC /* PBXContainerItemProxy */;
+		};
+		B6E55E784799B63E23A928EA091109E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICountingLabel;
+			target = DA392EE8E5B24D16FB9910405A0AFC2E /* UICountingLabel */;
+			targetProxy = 2331FC354592179C10840D17D20A7DB0 /* PBXContainerItemProxy */;
+		};
+		CC30BBA92CAD16DDA37E1E6CB27B6D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PNChart;
+			target = 0FC1CB21D1B64FAAC47A6478616DA728 /* PNChart */;
+			targetProxy = BAE30878D4B2E6C206A443C516C56523 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F51D490CFCF2B28604661A5BA43885A /* Release */ = {
+		06E47ED78A4BE8EC87055E8EBC39AC56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45345F371186FC1299293B470351C236 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 2FD37DE49239814FA80E06F433746BEB /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25BF96A91AB6E52E4A9E310D9E3D5DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD96245F52B70A61E2C9275E2F75DFB6 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -367,7 +755,7 @@
 			};
 			name = Release;
 		};
-		38A39B050DE49AFABCF640B0C2E1CEFF /* Debug */ = {
+		5883F386E08DCBC86B185C049AE48317 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3716BAEBAE7E1B8CF05BA7A0F2F499CB /* Pods-Aniflix.debug.xcconfig */;
 			buildSettings = {
@@ -402,42 +790,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		7E4DD34C015AF88BA8F9C723E71D0FEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 364DFADCCB7965E4ED4C8225EEAD2AC8 /* Pods-Aniflix.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Aniflix/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Aniflix/Pods-Aniflix.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Aniflix;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -488,6 +840,76 @@
 			};
 			name = Debug;
 		};
+		A527976B9BD87100DEA4E6E65EC6372B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 364DFADCCB7965E4ED4C8225EEAD2AC8 /* Pods-Aniflix.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Aniflix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aniflix/Pods-Aniflix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Aniflix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B57A481F890E2E955C73399381280A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD37DE49239814FA80E06F433746BEB /* UICountingLabel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UICountingLabel/UICountingLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICountingLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UICountingLabel/UICountingLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UICountingLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -532,9 +954,43 @@
 			};
 			name = Release;
 		};
-		F9C36127DC4ED58F29ACEF487F43970F /* Debug */ = {
+		C014848002EB5F6248E682273C65FBB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45345F371186FC1299293B470351C236 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = 06FA6D3B17010E484AD220C9BA126188 /* PNChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChart/PNChart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PNChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB243D335AB97FE9B79B37EAC9A63F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD96245F52B70A61E2C9275E2F75DFB6 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -566,6 +1022,40 @@
 			};
 			name = Debug;
 		};
+		F5A31D77BF8328968E54C3A45504D38D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FA6D3B17010E484AD220C9BA126188 /* PNChart.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNChart/PNChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChart/PNChart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PNChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,20 +1068,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC498EB790A4F3DDEA960E519E4540AC /* Build configuration list for PBXNativeTarget "Pods-Aniflix" */ = {
+		452129BC9842BDBFAB196522CAB76D68 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A39B050DE49AFABCF640B0C2E1CEFF /* Debug */,
-				7E4DD34C015AF88BA8F9C723E71D0FEB /* Release */,
+				DB243D335AB97FE9B79B37EAC9A63F01 /* Debug */,
+				25BF96A91AB6E52E4A9E310D9E3D5DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4BBF8B705EF2A8224E9367FA723E388 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		6A92B5FD027CE987470A48E671364959 /* Build configuration list for PBXNativeTarget "PNChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9C36127DC4ED58F29ACEF487F43970F /* Debug */,
-				0F51D490CFCF2B28604661A5BA43885A /* Release */,
+				F5A31D77BF8328968E54C3A45504D38D /* Debug */,
+				C014848002EB5F6248E682273C65FBB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F783D0FAA7F94C1B76C56BCAF952781 /* Build configuration list for PBXNativeTarget "Pods-Aniflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5883F386E08DCBC86B185C049AE48317 /* Debug */,
+				A527976B9BD87100DEA4E6E65EC6372B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A22DE6618BE94C542426A3608C6D3E5 /* Build configuration list for PBXNativeTarget "UICountingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57A481F890E2E955C73399381280A70 /* Debug */,
+				06E47ED78A4BE8EC87055E8EBC39AC56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

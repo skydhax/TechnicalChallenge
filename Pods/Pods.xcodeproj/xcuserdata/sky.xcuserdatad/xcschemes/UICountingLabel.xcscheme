@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B97099A3D5269A77E9534AD014B9CD16'
-               BlueprintName = 'SVProgressHUD'
+               BlueprintIdentifier = 'DA392EE8E5B24D16FB9910405A0AFC2E'
+               BlueprintName = 'UICountingLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SVProgressHUD.framework'>
+               BuildableName = 'UICountingLabel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
